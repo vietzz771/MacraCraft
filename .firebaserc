@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "salinaka-ecommerce"
-  }
+    "default": "exe201-d96d5",
+    "s": "exe201-d96d5"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
