@@ -1,0 +1,89 @@
+.footer {
+  position: relative;
+  padding: 0 $xxl-size;
+  background: $off-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mobile {
+    padding: 0;
+    padding-top: 2.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.footer-logo {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+}
+
+.footer-col-1 {
+  flex-basis: 40%; 
+
+  @include mobile {
+    flex-basis: none;
+    order: 1;
+    text-align: center;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin: 0px;
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    p {
+      font-weight: bold;
+    }
+  }
+}
+
+.footer-col-2 {
+  padding: 3rem 0;
+  text-align: center;
+  flex-basis: 20%;
+
+  @include mobile {
+    flex-basis: none;
+    order: 3;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footer-col-3 {
+  flex-basis: 40%;
+  text-align: right;
+
+  @include mobile {
+    flex-basis: none;
+    order: 2;
+    text-align: center;
+  }
+  span {
+    margin-left: 2rem;
+    a:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@include mobile {
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3 {
+    width: 100%;
+    margin: $s-size 0;
+  }
+}
